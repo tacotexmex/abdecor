@@ -37,6 +37,7 @@ abdecor.register_advanced_decoration = function(name, def)
 	local mapgen_node_name = "abdecor:" .. name .. "_marker"
 	minetest.register_node(":" .. mapgen_node_name,{
 		drawtype = "airlike",
+		paramtype = "light",
 		sunlight_propagates = true,
 		walkable = false,
 		pointable = true,
